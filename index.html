@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Text Animation Tool</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- Customization Panel -->
+            <div class="customization-panel">
+                <input type="text" id="text-input" placeholder="Enter your text here">
+                <select id="font-selection">
+                    <option value="Arial">Arial</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Georgia">Georgia</option>
+                    <!-- Add more fonts as needed -->
+                </select>
+                <input type="color" id="text-color" value="#000000">
+                <input type="color" id="bg-color" value="#FFFFFF">
+                <select id="animation-selection">
+                    <option value="slide-in">Slide In</option>
+                    <option value="fade-in">Fade In</option>
+                    <option value="bounce">Bounce</option>
+                    <!-- Add more animations as needed -->
+                </select>
+                <button id="apply-changes">Apply Changes</button>
+            </div>
+
+            <!-- Live Preview -->
+            <div class="preview">
+                <p id="preview-text">Your animated text will appear here.</p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+</html>
